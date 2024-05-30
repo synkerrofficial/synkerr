@@ -119,12 +119,22 @@ const Carousel = React.forwardRef((props, ref) => {
 				role:"Web Developer",
 				image:"Taraka.jpeg"
 			},
+			{
+				name:"Kushagra",
+				role:"React Master",
+				image:"kushagra.jpeg"
+			},
 		],
 		designTeam: [
 			{
 				name: "Rishav",
 				role:"UI/UX Design",
 				image:"Rishav.jpeg"
+			},
+			{
+				name:"Bhavan Kumaar",
+				role:"graphic designer",
+				image:"BKS.jpeg"
 			}
 		],
 		marketingTeam: [
@@ -133,11 +143,7 @@ const Carousel = React.forwardRef((props, ref) => {
 				role: "Marketing Head",
 				image:"SagarMedia.jpeg"
 			},
-			{
-				name:"Bhavan Kumar",
-				role:"Marketing exeutive",
-				image:"BKS.jpeg"
-			}
+			
 		],
 		AppTeam:[
 			{
@@ -278,7 +284,7 @@ const Carousel = React.forwardRef((props, ref) => {
 							)}`}
 							onClick={() => setSelectedTab("AiTeam")}
 						>
-							<span>Ai-ML</span>
+							<span>AI-ML</span>
 						</div>
 						</div>
 				</div>
