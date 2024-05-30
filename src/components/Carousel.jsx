@@ -115,9 +115,9 @@ const Carousel = React.forwardRef((props, ref) => {
 				image:"Prateek.jpeg"
 			},
 			{
-				name:"Tarak",
+				name:"Taraka",
 				role:"Web Developer",
-				image:"Tarak.jpeg"
+				image:"Taraka.jpeg"
 			},
 		],
 		designTeam: [
