@@ -1,16 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeroSectionCentre from "./HeroSectionCentre";
+import "./HeroSection.css";
 
 export default function HeroSection( {TeamRef} ) {
 	
 	return (
-		<div className="w-full h-[100vh] relative flex items-center justify-center " 
-		style={{
-			backgroundImage: "url('center1.svg'), url('center2.svg')",
-			backgroundRepeat: 'no-repeat, no-repeat',
-			backgroundPosition: 'left, right'
-		  }}>
+		<div className="w-full h-[100vh] relative flex items-center justify-center heroSection" >
 			<Navbar TeamRef={TeamRef} />
 			<HeroSectionCentre />
 			<div className="flex">

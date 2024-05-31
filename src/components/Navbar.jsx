@@ -14,9 +14,10 @@ export default function Navbar({ TeamRef }) {
 
   return (
     <div
-      className="w-full h-[130px] flex items-center justify-between z-10 absolute top-0 left-0 px-[60px] bg-cover bg-center"
+      className="w-full h-[100px] flex items-center justify-between z-10 absolute top-0 left-0 px-[60px] bg-cover bg-center"
       style={{
         backgroundImage: "url('purplebackdrop.svg')",
+        backgroundSize: "cover",
       }}
     >
       <img src="logo.svg" alt="" className="w-[150px]" />
