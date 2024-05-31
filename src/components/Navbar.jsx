@@ -40,9 +40,9 @@ export default function Navbar({ TeamRef }) {
       <p className="bg-[#302d50] px-5 py-3 rounded-full hidden lg:block md:block ">
         Contact Us
       </p>
-      <p className="bg-[#302d50] px-5 py-3 block rounded-full lg:hidden md:hidden ">
-        <Hamburger className="scale-[30%]"/>
-      </p>
+      <div className="px-5 py-3 block rounded-full lg:hidden md:hidden">
+        <Hamburger/>
+      </div>
     </div>
   );
 }
