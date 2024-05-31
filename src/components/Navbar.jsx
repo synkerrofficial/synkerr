@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Hamburger from "./Hamburger";
 
 export default function Navbar({ TeamRef }) {
   const [nav, setNav] = useState(false);
@@ -40,7 +41,7 @@ export default function Navbar({ TeamRef }) {
         Contact Us
       </p>
       <p className="bg-[#302d50] px-5 py-3 block rounded-full lg:hidden md:hidden ">
-        {nav ? "X" : "|||"}
+        <Hamburger className="scale-[30%]"/>
       </p>
     </div>
   );
