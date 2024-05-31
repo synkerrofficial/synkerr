@@ -5,12 +5,13 @@ import HeroSectionCentre from "./HeroSectionCentre";
 export default function HeroSection( {TeamRef} ) {
 	
 	return (
-		<div className="w-full h-[100vh] relative flex items-center justify-center ">
+		<div className="w-full h-[100vh] relative flex items-center justify-center " 
+		style={{
+			backgroundImage: "url('center1.svg'), url('center2.svg')",
+			backgroundRepeat: 'no-repeat, no-repeat',
+			backgroundPosition: 'left, right'
+		  }}>
 			<Navbar TeamRef={TeamRef} />
-			<img
-				className="absolute w-[100%] max-w-[1000px] top-0 left-0 "
-				src="purplebackdrop.svg"
-			/>
 			<HeroSectionCentre />
 			<div className="flex">
 				<p className="absolute bottom-[30px] px-6 py-3 left-[50%] transform translate-x-[-50%] font-medium text-[15px] text-[#888888] rounded-full mt-[25px] border-solid border-[#2b2b2b] border-[1px]">

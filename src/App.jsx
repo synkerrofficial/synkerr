@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import HeroSectiontwo from "./components/HeroSection";
+import HeroSection from "./components/HeroSection";
 import Globe from "./components/Globe";
 import Carousel from "./components/Carousel";
 import SocialMedia from "./components/SocialMedia";
@@ -12,7 +12,7 @@ const App = () => {
 
 	return (
 		<div className="App min-w-full min-h-screen overflow-x-hidden">
-			<HeroSectiontwo TeamRef={TeamRef}/>
+			<HeroSection TeamRef={TeamRef}/>
 			<Globe />
 			<SocialMedia/>
 			<Objectives/>

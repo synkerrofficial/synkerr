@@ -34,7 +34,7 @@ function SocialMedia() {
             <a href="https://www.instagram.com/synkerrofficial?igsh=MXExNzNhaDIxbGF5dA==" rel="noopener noreferrer" target="_blank" className="mr-4 flex flex-col">
               <BsInstagram size={48} /><span>Instagram</span>
             </a>
-            <a href="https://twitter.com/Kakashi8654" target="_blank" rel="noopener noreferrer" className='flex flex-col mr-4'>
+            <a href="https://x.com/SynkerrOfficial" target="_blank" rel="noopener noreferrer" className='flex flex-col mr-4'>
               <BsTwitter size={48} /><span>Twitter</span>
             </a>
           </div>
