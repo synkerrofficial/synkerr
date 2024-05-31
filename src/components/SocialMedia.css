@@ -1,13 +1,12 @@
-.TD a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10%;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  animation: floatIcon 4s infinite ease-in-out;
-  margin-top: 5%;
-  background: #2C1A4D;
+.social-media-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.social-media-container.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .TD a {
@@ -42,25 +41,18 @@
   }
 }
 
-.TD a:first-child:hover { 
+.TD a:hover { 
   background-color: rgb(25, 35, 168); 
   transform: scale(1.1) translateY(-10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  animation: none; 
 }
 
 .TD a:nth-child(2):hover {
   background-color: #C13584;
-  transform: scale(1.1) translateY(-10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  animation: none; 
 }
 
 .TD a:nth-child(3):hover {
   background-color: cyan;
-  transform: scale(1.1) translateY(-10px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  animation: none;
 }
 
 @keyframes floatIcon {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Bounce } from "react-awesome-reveal";
 import "./Objectives.css";
-import FAQ from './FAQ';
 const Objectives = () => {
   return (
     <div className="h-max bg-black ">
