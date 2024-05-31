@@ -1,7 +1,7 @@
 /* HeroSection.css */
 @media (min-width: 767px) {
     .heroSection {
-      background-image: url('center1.svg'), url('center2.svg');
+      background-image: url('/public/center1.svg'), url('/public/center2.svg');
       background-repeat: no-repeat, no-repeat;
       background-position: left, right;
     }
