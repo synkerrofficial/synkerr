@@ -27,7 +27,7 @@ function Footer() {
         <div className="capitalize">Join the wishlist</div>
       </div>
     </div>
-    <div className="flex justify-center text-center capitalize h-10 w-full p-3 text-lg">©All rights reserved synkerr pvt lid.</div>
+    <div className="flex justify-center text-center capitalize h-10 w-full p-3 text-lg">©All rights reserved synkerr pvt ltd.</div>
     </div>
     
   )
