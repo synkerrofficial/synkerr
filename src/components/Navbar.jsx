@@ -1,14 +1,30 @@
 import React from "react";
 import { useState } from "react";
 import Hamburger from "./Hamburger";
+import SocialMedia from "./SocialMedia";
 
-export default function Navbar({ TeamRef }) {
+export default function Navbar({ TeamRef,FaqRef,SocialMediaRef,ObjectivesRef}) {
   const [nav, setNav] = useState(false);
 
   const ScrollToTeam = () => {
     const teamElement = TeamRef.current;
     if (teamElement) {
       const offsetTop = teamElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+  const ScrollToSocialMedia = () => {
+    const SocailMediaElement = SocialMediaRef.current;
+    if (SocailMediaElement) {
+      const offsetTop = SocailMediaElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+
+  const ScrollToObjectives = () => {
+    const ObjectiveElement = ObjectivesRef.current;
+    if (ObjectiveElement) {
+      const offsetTop = ObjectiveElement.offsetTop;
       window.scrollTo({ top: offsetTop, behavior: 'smooth' });
     }
   };
@@ -24,7 +40,7 @@ export default function Navbar({ TeamRef }) {
       <img src="logo.svg" alt="" className="w-[150px]" />
 
       <div className="gap-[40px] font-medium hidden md:flex lg:flex">
-        <p className="text-[#9d9da4] hover:text-white duration-[200ms] cursor-pointer">
+        <p className="text-[#9d9da4] hover:text-white duration-[200ms] cursor-pointer" onClick={ScrollToObjectives}>
           Our Aim
         </p>
         <p
@@ -33,7 +49,8 @@ export default function Navbar({ TeamRef }) {
         >
           Team
         </p>
-        <p className="text-[#9d9da4] hover:text-white duration-[200ms] cursor-pointer">
+        <p className="text-[#9d9da4] hover:text-white duration-[200ms] cursor-pointer"
+        onClick={ScrollToSocialMedia}>
           What we Do
         </p>
       </div>
@@ -41,7 +58,7 @@ export default function Navbar({ TeamRef }) {
         Contact Us
       </p>
       <div className="px-5 py-3 block rounded-full lg:hidden md:hidden">
-        <Hamburger/>
+        <Hamburger TeamRef={TeamRef} FaqRef={FaqRef} SocialMediaRef={SocialMediaRef}/>
       </div>
     </div>
   );

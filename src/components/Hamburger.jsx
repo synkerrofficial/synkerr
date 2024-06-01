@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
-const Hamburger = () => {
+export default function Hamburger({ TeamRef, FaqRef ,SocialMediaRef,ObjectivesRef}) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -28,6 +28,36 @@ const Hamburger = () => {
     };
   }, [open]);
 
+  const ScrollToTeam = () => {
+    const teamElement = TeamRef.current;
+    if (teamElement) {
+      const offsetTop = teamElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+
+  const ScrollToFaq = () => {
+    const faqElement = FaqRef.current;
+    if (faqElement) {
+      const offsetTop = faqElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+
+  const ScrollToSocialMedia = () => {
+    const SocailMediaElement = SocialMediaRef.current;
+    if (SocailMediaElement) {
+      const offsetTop = SocailMediaElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
+  const ScrollToObjectives = () => {
+    const ObjectiveElement = ObjectivesRef.current;
+    if (ObjectiveElement) {
+      const offsetTop = ObjectiveElement.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  };
   return (
     <div ref={menuRef}>
       <div className="flex flex-col items-end">
@@ -52,10 +82,10 @@ const Hamburger = () => {
               <div className="h-[auto] w-[auto] rounded-2xl bg-violet-950 p-5">
                 <div className="text-white cursor-pointer flex flex-col gap-3.5 items-center">
                   <div>Home</div>
-                  <div>About</div>
-                  <div>Goal</div>
-                  <div>Team</div>
-                  <div>FAQ</div>
+                  <div onClick={ScrollToSocialMedia}>About</div>
+                  <div onClick={ScrollToObjectives}>Goal</div>
+                  <div onClick={ScrollToTeam}>Team</div>
+                  <div onClick={ScrollToFaq}>FAQ</div>
                 </div>
               </div>
             </div>
@@ -65,5 +95,3 @@ const Hamburger = () => {
     </div>
   );
 }
-
-export default Hamburger;

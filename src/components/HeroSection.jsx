@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import HeroSectionCentre from "./HeroSectionCentre";
 import "./HeroSection.css";
 
-export default function HeroSection( {TeamRef} ) {
+export default function HeroSection( {TeamRef,FaqRef,SocialMediaRef,ObjectivesRef} ) {
 	
 	return (
 		<div className="w-full h-[100vh] relative flex items-center justify-center heroSection" >
-			<Navbar TeamRef={TeamRef} />
+			<Navbar TeamRef={TeamRef} FaqRef={FaqRef} SocialMediaRef={SocialMediaRef} ObjectivesRef={ObjectivesRef}/>
 			<HeroSectionCentre />
 			<div className="flex">
 				<p className="absolute bottom-[30px] px-6 py-3 left-[50%] transform translate-x-[-50%] font-medium text-[15px] text-[#888888] rounded-full mt-[25px] border-solid border-[#2b2b2b] border-[1px]">

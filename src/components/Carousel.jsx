@@ -289,6 +289,7 @@ const Carousel = React.forwardRef((props, ref) => {
 						</div>
 				</div>
 			</div>
+			
 			<div className="h-[75%] w-full bg-black flex justify-center items-center gap-10 p-10 relative md:flex-row flex-col mt-10 md:mt-10">
 				<button
 					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] hidden md:block"

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Bounce } from "react-awesome-reveal";
 import "./Objectives.css";
-const Objectives = () => {
+const Objectives = React.forwardRef((props,ref) => {
   return (
-    <div className="h-max bg-black ">
+    <div className="h-max bg-black " ref={ref}>
       <p className="text-center text-3xl text-gray-400 py-16 ">
         Our key objectives
       </p>
@@ -66,6 +66,6 @@ const Objectives = () => {
       </div>
     </div>
   );
-}
+});
 
 export default Objectives

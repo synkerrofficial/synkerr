@@ -3,7 +3,7 @@ import './SocialMedia.css';
 import { BsLinkedin, BsInstagram, BsTwitter } from 'react-icons/bs';
 import {Slide} from 'react-awesome-reveal';
 
-function SocialMedia() {
+const  SocialMedia= React.forwardRef((props, ref) =>{
   // State to track whether the component has finished animating
   const [animate, setAnimate] = useState(false);
 
@@ -13,7 +13,7 @@ function SocialMedia() {
   }, []);
 
   return (
-    <div className={`social-media-container ${animate ? 'slide-in' : ''}`}>
+    <div ref={ref} className={`social-media-container ${animate ? 'slide-in' : ''}`}>
       <Slide>
         <div className="bg-[#A79FFF] flex flex-col md:flex-row p-10">
           <div className="w-full md:w-[50%] p-4">
@@ -56,6 +56,6 @@ function SocialMedia() {
       
     </div>
   );
-}
+});
 
 export default SocialMedia;

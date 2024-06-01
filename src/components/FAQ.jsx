@@ -1,10 +1,11 @@
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import "./FAQ.css";
+import React from "react";
 import { useState } from "react";
 import Accordian from "./Accordian.jsx";
 
-function FAQ() {
+const FAQ = React.forwardRef((props, ref) => {
   const datas = [
     {
       title: "What is Synkerr?",
@@ -43,7 +44,7 @@ function FAQ() {
   const toggled = useState(null);
 
   return (
-    <div className="bg-black mt">
+    <div className="bg-black mt" ref={ref}>
       <div className="flex flex-col justify-center items-center  h-max lg:gap-30 sm:gap-10">
         <div className=" bg-gradient-to-br  from-purple-700 via-black to-purple-500 p-0.5 rounded-3xl ">
           <div className="block w-auto px-16 py-5  rounded-3xl shadow hover:bg-gray-100 bg-gradient-to-br  from-black via-gray-950 to-indigo-950 ">
@@ -64,6 +65,6 @@ function FAQ() {
       </div>
     </div>
   );
-}
+});
 
 export default FAQ;
