@@ -58,7 +58,7 @@ export default function Navbar({ TeamRef,FaqRef,SocialMediaRef,ObjectivesRef}) {
         Contact Us
       </p>
       <div className="px-5 py-3 block rounded-full lg:hidden md:hidden">
-        <Hamburger TeamRef={TeamRef} FaqRef={FaqRef} SocialMediaRef={SocialMediaRef}/>
+        <Hamburger TeamRef={TeamRef} FaqRef={FaqRef} SocialMediaRef={SocialMediaRef} ObjectivesRef={ObjectivesRef}/>
       </div>
     </div>
   );
