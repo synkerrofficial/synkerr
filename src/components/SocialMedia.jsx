@@ -42,7 +42,7 @@ const  SocialMedia= React.forwardRef((props, ref) =>{
                 <a href="https://www.linkedin.com/company/synkerr/" target="_blank" rel="noopener noreferrer" className="mr-4 flex flex-col">
                   <BsLinkedin size={48} /><span>LinkedIn</span>
                 </a>
-                <a href="https://www.instagram.com/synkerrofficial?igsh=MXExNzNhaDIxbGF5dA==" rel="noopener noreferrer" target="_blank" className="mr-4 flex flex-col">
+                <a href="https://www.instagram.com/synkerrofficial?igsh=MXExNzNhaDIxbGF5dA==" rel="noopener noreferrer" target="_blank" className="mr-4 flex flex-col mt-3 mb-3 md:mb-0 md:mt-0">
                   <BsInstagram size={48} /><span>Instagram</span>
                 </a>
                 <a href="https://x.com/SynkerrOfficial" target="_blank" rel="noopener noreferrer" className='flex flex-col mr-4'>
