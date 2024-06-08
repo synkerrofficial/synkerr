@@ -9,15 +9,15 @@ const FAQ = React.forwardRef((props, ref) => {
   const datas = [
     {
       title: "What is Synkerr?",
-      ans: "Synkerr is a social networking platform dedicated to connecting individuals with similar interests and goals. It's place where people can forge meaningful connections, join in personalized community, form teams, and engage in various hyperlocal events⚡",
+      ans: "SSynkerr is collaboration Marketplace dedicated to like-minded people. It's a place where people can team up for their projects, Ideas and fun. Synkerr facilitates with hyperlocal events where one can organise or attend hyperlical events. Also we provide users to build or join personalised communities like School or college alumni network, college clubs, social service groups and interests based communities.⚡",
     },
     {
       title: "How does Synkerr work?",
-      ans: "Synkerr works by allowing users to create profiles, search for other users based on shared interests or professional backgrounds, join groups, participate in discussions, and collaborate on projects or initiatives.",
+      ans: "Users have to find motto before collaborating with like-minded people. Based on users profile and need we recommend best suitable people, teams or events that can fulfill your purpose in efficient ways",
     },
     {
       title: "Who can join Synkerr?",
-      ans: "Synkerr is open to professionals, entrepreneurs, freelancers, small businesses, and individuals interested in networking, collaboration, and professional development.",
+      ans: "Synkerr is best place for college & school students, freelancers, self-employed people, travellers and people who enjoys offline hangouts. Our goal is to Accomplish users motto by connecting them with right people, teams, and community.",
     },
     {
       title: "What features does Synkerr offer?",
@@ -29,15 +29,15 @@ const FAQ = React.forwardRef((props, ref) => {
     },
     {
       title: "Can I join communities on Synkerr?",
-      ans: " Yes, Synkerr offers communities on various topics, industries, and interests. You can join existing groups or create your own to connect with like-minded individuals.",
+      ans: " Yes, Synkerr offers communities on various topics, industries, and interests. You can join existing groups or create your own to connect with like-minded people.",
     },
     {
       title: "Can I promote events or initiatives in Synkerr?",
-      ans: "Yes, users can promote events, webinars, workshops, or other initiatives on Synkerr by creating event listings and sharing them with their network.",
+      ans: "Yes, users can not only promote events but also host and participate the hyperlocal events like hackathons, book reading, startup pitches, parties etc.",
     },
     {
       title: "Is Synkerr available as a mobile app?",
-      ans: "Synkerr is available as a mobile app for both iOS and Android devices, enabling users to access the platform while on the move.",
+      ans: "Very soon we'll be launching the app on both android and iOS. Be among the 1st synkerr users by clicking on the button \"Join the Waitlist\" now.",
     },
   ];
 

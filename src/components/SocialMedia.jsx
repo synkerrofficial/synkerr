@@ -23,7 +23,7 @@ const  SocialMedia= React.forwardRef((props, ref) =>{
             </h1>
             <br />
             <p className="text-black text-lg md:text-2xl">
-            We're the passionate team from NITK, revolutionizing how individuals collaborate with like-minded peers for formal endeavors. Our platform simplifies the process, matching professionals based on skills and objectives, fostering meaningful connections for freelancers, teams, and businesses seeking collaboration and growth.
+            We're the passionate team from NITK, revolutionizing how individuals collaborate with like-minded peers for collaboation purposes. Our platform simplifies the process, matching professionals based on skills and objectives, fostering meaningful connections for freelancers, teams, and businesses seeking collaboration and growth.
             <br /><br />
             Whether you're a passionate entrepreneur seeking a co-founder or a college student looking to build a team for your next project, Synkerr is designed specifically for the younger generation. If you want to join the Synkerr team or be one of the first users to experience what Synkerr has to offer, stay connected with us on our social media accounts.
             </p>

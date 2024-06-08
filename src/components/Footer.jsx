@@ -24,7 +24,10 @@ function Footer() {
         <div className="capitalize mt-5">What we do?</div>
       </div>
       <div className="w-1/4 p-5 text-2xl ">
+        <a href="https://forms.gle/QK8cgHGN4T4i8FDS9" rel='noopener noreferrer' target='_blank'>
         <div className="capitalize">Join the wishlist</div>
+        </a>
+        
       </div>
     </div>
     <div className="flex justify-center text-center capitalize h-10 w-full p-3 text-lg">©All rights reserved synkerr pvt ltd.</div>
